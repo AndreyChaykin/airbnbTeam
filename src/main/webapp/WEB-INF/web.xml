@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>main</servlet-name>
+        <servlet-class>com.gojava6.airbnb.servlet.EntryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>main</servlet-name>
+        <url-pattern>/main</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <servlet-class>com.gojava6.airbnb.servlet.OutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
+    <!--<servlet>-->
+        <!--<servlet-name>loginServlet</servlet-name>-->
+        <!--<servlet-class>com.gojava6.airbnb.servlet.LogInServlet</servlet-class>-->
+        <!--<init-param>-->
+            <!--<param-name>companyName</param-name>-->
+            <!--<param-value>airBnB</param-value>-->
+        <!--</init-param>-->
+        <!--<init-param>-->
+            <!--&lt;!&ndash;<param-name>ParamAdminName</param-name>&ndash;&gt;-->
+            <!--&lt;!&ndash;<param-value>Azzzeeck</param-value>&ndash;&gt;-->
+        <!--</init-param>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>loginServlet</servlet-name>-->
+        <!--<url-pattern>/login</url-pattern>-->
+    <!--</servlet-mapping>-->
+    <!--<servlet>-->
+        <!--<servlet-name>logoutServlet</servlet-name>-->
+        <!--<servlet-class>com.gojava6.airbnb.servlet.LogOutServlet</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>logoutServlet</servlet-name>-->
+        <!--<url-pattern>/logout</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <!--<filter>-->
+        <!--<filter-name>requestFilter</filter-name>-->
+        <!--<filter-class>com.gojava6.airbnb.servlet.filter.RequestLogFilter</filter-class>-->
+    <!--</filter>-->
+    <!--<filter-mapping>-->
+        <!--<filter-name>requestFilter</filter-name>-->
+        <!--<url-pattern>/*</url-pattern>-->
+    <!--</filter-mapping>-->
+    <!--<filter>-->
+        <!--<filter-name>authenticationFilter</filter-name>-->
+        <!--<filter-class>com.gojava6.airbnb.servlet.filter.AuthenticationFilter</filter-class>-->
+    <!--</filter>-->
+    <!--<filter-mapping>-->
+        <!--<filter-name>authenticationFilter</filter-name>-->
+        <!--<url-pattern>/*</url-pattern>-->
+    <!--</filter-mapping>-->
+    <!--<filter>-->
+        <!--<filter-name>logginFilter</filter-name>-->
+        <!--<filter-class>com.gojava6.airbnb.servlet.filter.LogInFilterServlet</filter-class>-->
+    <!--</filter>-->
+    <!--<filter-mapping>-->
+        <!--<filter-name>logginFilter</filter-name>-->
+        <!--<servlet-name>loginServlet</servlet-name>-->
+    <!--</filter-mapping>-->
+
+    <!--<session-config>-->
+        <!--<session-timeout>45</session-timeout>-->
+    <!--</session-config>-->
+
+    <!--<context-param>-->
+        <!--<param-name>contextName</param-name>-->
+        <!--<param-value>veryImportantContext</param-value>-->
+    <!--</context-param>-->
+    <!--<context-param>-->
+        <!--<param-name>secondContext</param-name>-->
+        <!--<param-value>secondVeryImportantContext</param-value>-->
+    <!--</context-param>-->
+
+</web-app>
