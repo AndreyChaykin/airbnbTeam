@@ -15,7 +15,8 @@ public class User implements Observer, Serializable {
     private String firstName;
     private String lastName;
     private String eMail;
-    private List<Apartment> apartments;
+    private String password;
+    private List<Apartment> apartments; //todo add in db
 
     public User() {
     }
@@ -88,6 +89,14 @@ public class User implements Observer, Serializable {
 
     public void setApartments(List<Apartment> apartments) {
         this.apartments = apartments;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public void addApartment(Apartment apartment) throws ApartmentTypeException {

@@ -5,10 +5,10 @@ import java.util.Date;
 
 public class ReserveApartment implements Serializable {
 
-    private int apartmentID;
-    private int hostID;
     private int reserveID;
+    private int apartmentID;
     private int renterID;
+    private int hostID;
     private Date dateIN;
     private Date dateOUT;
 
